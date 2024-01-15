@@ -5,6 +5,7 @@ import { ForState } from './components/ForState';
 import HandlingTextInput from './components/HandlingTextInput';
 import ForScrollView from './components/ForScrollView';
 import ForFlatList from './components/ForFlatList';
+import ForSectionList from './components/ForSectionList';
 
 const PizzaTranslator = () => {
  
@@ -15,7 +16,8 @@ const PizzaTranslator = () => {
       <ForState/>
       <HandlingTextInput/>
       {/* <ForScrollView/> */}
-      <ForFlatList/>
+      {/* <ForFlatList/> */}
+      <ForSectionList/>
     </View>
   );
 };
