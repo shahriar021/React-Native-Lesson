@@ -1,20 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {useState} from 'react';
+import {Text, TextInput, View} from 'react-native';
+import Cat from './components/Cat';
 
-export default function App() {
+const PizzaTranslator = () => {
+  const [text, setText] = useState('');
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={{padding: 100}}>
+      <TextInput
+        style={{height: 90,alignItems:"center",justifyContent:"center"}}
+        placeholder="Type here to translate!"
+        onChangeText={newText => setText(newText)}
+        defaultValue={text}
+      />
+      <Text style={{padding: 10, fontSize: 42}}>
+        {text
+          .split(' ')
+          .map(word => word && '🍕')
+          .join(' ')}
+      </Text>
+      <Cat/>
     </View>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default PizzaTranslator;
