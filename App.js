@@ -17,7 +17,7 @@ const PizzaTranslator = () => {
       <HandlingTextInput/>
       {/* <ForScrollView/> */}
       {/* <ForFlatList/> */}
-      <ForSectionList/>
+      {/* <ForSectionList/> */}
     </View>
   );
 };
