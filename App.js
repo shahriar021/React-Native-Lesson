@@ -59,7 +59,7 @@
 
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import Index from './activelyIndicator/Index';
+import Index from './presseble/Index';
 
 function App() {
   return (
