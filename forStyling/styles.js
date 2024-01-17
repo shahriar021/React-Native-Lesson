@@ -4,11 +4,15 @@ const style = StyleSheet.create({
   kisuEkta: {
     backgroundColor: "red",
     color: "black",
+    
+    
+  },
+
+  onnoKisuEkta:{
     fontSize:24,
     fontStyle:"italic",
     fontWeight:"bold",
-    
-  },
+  }
   
 });
 

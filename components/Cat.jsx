@@ -6,7 +6,7 @@ import style from "../forStyling/styles";
 const Cat = (props) => {
   return (
     <View>
-      <Text style={style.kisuEkta}>Hello, I am...{props.name}</Text>
+      <Text style={[style.kisuEkta , style.onnoKisuEkta]}>Hello, I am...{props.name}</Text>
       <Image
         source={{
           uri: "https://reactnative.dev/docs/assets/p_cat1.png",
