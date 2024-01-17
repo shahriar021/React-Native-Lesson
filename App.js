@@ -59,7 +59,7 @@
 
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import Index from './modal/Index';
+import Index from './activelyIndicator/Index';
 
 function App() {
   return (
